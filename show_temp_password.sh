@@ -1,1 +1,1 @@
-docker logs jenkins 2>&1 | grep -B 2 initialAdminPassword | head -n 1
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
